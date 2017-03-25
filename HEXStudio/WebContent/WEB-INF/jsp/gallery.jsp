@@ -8,7 +8,10 @@
 </head>
 <body>
 	<h1>
-		haha <a href="./login">login</a>
+		haha login <a href="./login">login</a> <br>
+		haha upload <a href="./upload.jsp">upload</a> <br>
+		haha upload multiple <a href="./uploadMultiple.jsp">upload multiple</a> <br>
+		haha image: <img src="./imageController/${imagename}" />
 	</h1>
 </body>
 </html>
