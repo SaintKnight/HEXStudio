@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<meta http-equiv="Refresh" content="1;url=/HEXStudio${url}">
+<title>Loginout Result</title>
 </head>
 <body>
-	<h1>bla: ${loginresult}</h1>
+	<h1>${loginoutresult}</h1> <br>
+	<%-- <h1>url: ${url} </h1> --%>
 </body>
 </html>

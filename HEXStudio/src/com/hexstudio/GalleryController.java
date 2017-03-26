@@ -9,7 +9,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class GalleryController {
 	@RequestMapping(value = "/gallery", method = RequestMethod.GET)
 	public String gallary(ModelMap model) {
-		model.addAttribute("imagename", "yuri.png");
+		GlobalVariableObject instance = GlobalVariableObject.getInstance();
+		String currentUser = instance.getCurrentUser();
+		model.addAttribute("currentUser", currentUser);
+		model.addAttribute("url", "/gallery");
+		model.addAttribute("imagename", "/yuri.png");
 		return "gallery";
 	}
 }

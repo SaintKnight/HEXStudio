@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h2>User Login</h2>
-	<form:form method="POST" action="/HEXStudio/loginresult">
+	<form:form method="POST" action="/HEXStudio/loginoutresult">
 		<table>
 			<tr>
 				<td><form:label path="username">User Name</form:label></td>
@@ -19,6 +19,10 @@
 				<td colspan="2"><input type="submit" value="Submit" /></td>
 			</tr>
 		</table>
+		<input type="hidden" name="url" value="${param.url}" />
 	</form:form>
+	<form action="/HEXStudio${param.url}">
+		<input type="submit" value="back" />
+	</form>
 </body>
 </html>
